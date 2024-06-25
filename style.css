@@ -1,0 +1,96 @@
+:root {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    --primary-background-color: #1C1C1C;
+    --secondary-background-color: #1F2937;
+    --secondary-color: #273549;
+    --primary-text-color: #FFFFFF;
+    --secondary-text-color: #D5D4D8;
+    --text-accent-color: #4ADF86;
+    --btn-accent-color: #10B981;
+    --input-accent-color: #55F991;
+
+}
+
+body {
+    background-color: var(--primary-background-color);
+    font-family: Inter
+}
+
+header {
+    background-color: var(--secondary-background-color);
+}
+
+main {
+    background-color: var(--secondary-background-color);
+    height: 446px;
+    width: 446px;
+    margin: 5rem;
+    padding: 52px;
+    align-content: center;
+    
+    h1 {
+        color: var(--primary-text-color);
+        width: 360px;
+        font-size: 40px;
+        font-weight: 800;
+
+        span {
+            color: var(--text-accent-color)
+        }
+    
+    }
+
+    p {
+        color: var(--secondary-text-color);
+        font-size: 20px;
+    }
+
+    hr {
+        margin: 35px 0;
+    }
+
+    button {
+        all: unset;
+        color: var(--primary-text-color);
+        background-color: var(--btn-accent-color);
+        text-align: center;
+        font-weight: 500;
+        height: 52px;
+        width: 191px;
+        margin-top: 51px;
+        border-radius: 6px;
+        cursor: pointer;   
+        transition: background-color 0.2s, box-shadow 0.1s;
+    }
+    button:hover {
+        background-color: #2ecc71;
+    }
+    
+    button:active {
+        background-color: #1abc9c;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        
+        input {
+            all: unset;
+            background-color: var(--secondary-color);
+            color: var(--input-accent-color);
+            height: 39px;
+            width: 211px;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: 500;
+        }   
+    }
+
+}
+
+footer {
+    background-color: var(--secondary-background-color);
+}
