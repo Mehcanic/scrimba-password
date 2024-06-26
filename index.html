@@ -17,13 +17,18 @@
         <main>
             <h1>Generate a <span>random password</span></h1>
             <p>Never use an insecure password again.</p>
-            <button id="generate-button" onClick="generatePasswords()">
-                Generate passwords
-            </button>
+            <div class="controls">
+                <button id="generate-button" onClick="generatePasswords()">
+                    Generate passwords
+                </button>
+                <input type="range" />
+            </div>
             <hr />
             <div>
-                <input type="text" id="input-field-one" />
-                <input type="text" id="input-field-two" />
+                <div>
+                    <input type="text" id="input-field-one" />
+                    <input type="text" id="input-field-two" />
+                </div>
             </div>
         </main>
         <footer></footer>

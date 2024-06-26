@@ -50,27 +50,33 @@ main {
 
     hr {
         margin: 35px 0;
+        color: #2F3E53;
     }
 
-    button {
-        all: unset;
-        color: var(--primary-text-color);
-        background-color: var(--btn-accent-color);
-        text-align: center;
-        font-weight: 500;
-        height: 52px;
-        width: 191px;
-        margin-top: 51px;
-        border-radius: 6px;
-        cursor: pointer;   
-        transition: background-color 0.2s, box-shadow 0.1s;
-    }
-    button:hover {
-        background-color: #2ecc71;
-    }
-    
-    button:active {
-        background-color: #1abc9c;
+    .controls {
+        display: flex;
+        align-content: center;
+                
+        button {
+            all: unset;
+            color: var(--primary-text-color);
+            background-color: var(--btn-accent-color);
+            text-align: center;
+            font-weight: 500;
+            height: 52px;
+            width: 191px;
+            /* margin-top: 51px; */
+            border-radius: 6px;
+            cursor: pointer;   
+            transition: background-color 0.2s, box-shadow 0.1s;
+        }
+        button:hover {
+            background-color: #2ecc71;
+        }
+        
+        button:active {
+            background-color: #1abc9c;
+        }
     }
 
     div {
